@@ -34,8 +34,15 @@
     border-radius: 50%;
 }
 
+.foreground-image:hover {
+    box-shadow: 0 0 5px #ffff00; /* adds a yellow glow to the foreground image when the button is clicked */
+}
+
 .button:active .foreground-image {
-    box-shadow: 0 0 10px #ffff00; /* adds a yellow glow to the foreground image when the button is clicked */
+    box-shadow: 0 0 20px #ffff00; /* adds a yellow glow to the foreground image when the button is clicked */
+    opacity: 70%;
+    width: 13.5vw;
+    height: auto;
 }
 
 

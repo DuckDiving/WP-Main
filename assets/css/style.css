@@ -1,0 +1,42 @@
+/*.plaque-button {
+        border-radius: 10%;
+        z-index: 1;
+    }
+.plaque-button:hover{
+        color: #111; 
+        background: greenyellow; 
+        box-shadow: 0 0 5px greenyellow; 
+        z-index: 1;
+    }
+
+
+.parent {
+    position: absolute;
+    width: 100%;
+}*/
+
+.button {
+    position: relative; /* allows the foreground image to be positioned on top of the background image */
+}
+
+.background-image {
+    width: 100vw; /* sets the width of the image to the full width of the button */
+    height: auto; /* sets the height of the image to the full height of the button */
+}
+
+.foreground-image {
+    position: absolute; /* positions the image on top of the background image */
+    width: 14vw; /* sets the width of the image to 80% of the button's width */
+    height: auto; /* sets the height of the image to 80% of the button's height */
+    top: 50.5%; /* positions the image 10% from the top of the button */
+    left: 50.5%; /* positions the image 10% from the left of the button */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.button:active .foreground-image {
+    box-shadow: 0 0 10px #ffff00; /* adds a yellow glow to the foreground image when the button is clicked */
+}
+
+
+  

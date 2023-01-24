@@ -24,6 +24,39 @@
     height: auto; /* sets the height of the image to the full height of the button */
 }
 
+.background-image2 {
+    position: absolute; /* positions the image on top of the background image */
+    width: 60vw; /* sets the width of the image to the full width of the button */
+    height: auto; /* sets the height of the image to the full height of the button */
+    top: 50.5%; /* positions the image 10% from the top of the button */
+    left: 50.5%; /* positions the image 10% from the left of the button */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.background-image3 {
+    position: absolute; /* positions the image on top of the background image */
+    width: 60vw; /* sets the width of the image to the full width of the button */
+    height: auto; /* sets the height of the image to the full height of the button */
+    top: 20%; /* positions the image 10% from the top of the button */
+    left: 50%; /* positions the image 10% from the left of the button */
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100vw;
+  }
+  
+  .background-image4 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
 .foreground-image {
     position: absolute; /* positions the image on top of the background image */
     width: 14vw; /* sets the width of the image to 80% of the button's width */
@@ -45,5 +78,48 @@
     height: auto;
 }
 
-
+.container {
+    position: relative;
+  }
   
+#pg1-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  #contents-page {
+    background-image: url('/assets/images/stsp2-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #image1, #image2 {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#image1.faded, #image2.faded {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#title-text {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
